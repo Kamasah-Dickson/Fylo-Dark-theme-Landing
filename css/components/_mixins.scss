@@ -1,0 +1,43 @@
+@mixin flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+@mixin button{
+    padding: 1rem 5rem;
+    border-radius: 25px;
+    border: none;
+    outline: none;
+    background-color: #339ecc;
+    color: white;
+    font-weight: 700;
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+    cursor: pointer;
+    box-shadow:1px 1px 8px 0px $main-background;
+    transition: 0.3s ease;
+    &:hover{
+        background-color: $lightblue;
+    }
+}
+
+@mixin center{
+max-width:90%;
+margin:0 auto;
+}
+
+@mixin button2{
+   color:$lightblue;
+   padding-bottom:.4rem;
+   border-bottom: 2px solid $lightblue;
+   text-decoration: none;
+   position: relative;
+   padding-right:1.6rem;
+   cursor: pointer;
+   &:hover{
+    color:$white2;
+    border-color:$white2;
+   }
+   
+}
